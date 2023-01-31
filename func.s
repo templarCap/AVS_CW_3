@@ -81,7 +81,7 @@ methodChord:
 	.string	"Correct interval from %d to %d\n"
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .LC6:
-	.string	"%func "
+	.string	"%f"
 .LC7:
 	.string	"w"
 .LC8:
