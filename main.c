@@ -24,7 +24,7 @@ void print(double answer, int file, double from, double to) {
             printf("Previous interval is incorrect: (%d, %d)\n", (int)from, (int)to);
             printf("Correct interval from %d to %d\n", (int)answer, (int)answer + 1);
         }
-        printf("%func ", answer);
+        printf("%f", answer);
     } else {
         FILE *fout;
         fout = fopen("output.txt", "w");
@@ -32,7 +32,7 @@ void print(double answer, int file, double from, double to) {
             fprintf(fout, "Previous interval is incorrect: (%d, %d)\n", (int) from, (int)to);
             fprintf(fout, "Correct interval from %d to %d\n", (int)answer, (int)answer + 1);
         }
-        fprintf(fout, "%func ", answer);
+        fprintf(fout, "%f", answer);
         fclose(fout);
     }
 }
